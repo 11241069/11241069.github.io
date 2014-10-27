@@ -10,8 +10,7 @@ table, th, td {
 <h1 style="text-align:center" >Curriculum</h1>
 <body style="background-color:lightgrey">
 <img src="liberty-6.jpg" alt="./" width="204" height="142" align="right">
-<p><b>Indice</b> </p>
-<table style="width:50%">
+<table style="width:100%">
   <tr>
     <td>1.</td>
     <td><a href="#DP">Datos Personales</a></td>
@@ -29,7 +28,7 @@ table, th, td {
     <td><a href="#EL">Experiencia Laboral</a></td>
   </tr>
   <tr>
-    <td>5.</td>
+    <td></td>
     <td><a href="#PT">Pasatiempos</a></td>
   </tr>
 </table>
