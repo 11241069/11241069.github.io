@@ -1,3 +1,30 @@
+div.img {
+    margin: 5px;
+    padding: 4px;
+    border: solid;
+    height: auto;
+    width: auto;
+    float: right;
+    text-align: center;
+}
+div.img2 {
+    margin: 5px;
+    padding: 4px;
+    border: solid;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+div.img3 {
+    margin: 5px;
+    padding: 4px;
+    border: solid;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
 h1{
 	color: #C4BD00;
 	text-align: center;
