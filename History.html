@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p>Ingrese Un Numero Impar Positivo Menor que 100</p>
+
+	<p id="demo"></p>
+	<input type="Text" name="VDN" id="VDN" value="Ingrese Su numero">
+	<button onclick="myFunction()">Prueba</button>
+	<button onclick="animBall()">AnimacionCool</button>
+	<button onclick="stopBall()">Stop</button>
+	<p id ="Respuesta"></p>
+	<p id ="1"></p>
+	<p id ="2"></p>
+	<script>
+	var animate;
+	function hola(){
+		var numero23=2321;
+		document.getElementById("2").innerHTML =numero23;
+	}
+	function myFunction(){
+		var numero = 0;
+		numero = document.getElementById("VDN").value;
+		var temp=0;
+		temp=numero;
+		numero=numero%2;
+		if(numero=="0"){
+			if(temp<100 && temp>0){
+				document.getElementById("Respuesta").innerHTML ="Su Numero Es Correcto";
+			}else{
+				document.getElementById("Respuesta").innerHTML ="Su Numero Es InCorrecto";
+			}
+		}
+		else
+		{
+			document.getElementById("Respuesta").innerHTML ="Su Numero Es InCorrecto";
+		}
+	}
+	var imgObj = null;
+	function init(){
+   		imgObj = document.getElementById("myImage");
+   		imgObj.style.position= 'relative'; 
+   		imgObj.style.left = '0px'; 
+	}
+	function animBall(){
+       imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+       animate=setTimeout(animBall, 10);
+   }
+   function stopBall(){
+   		imgObj.style.left='0px';
+   		clearTimeout(animate);
+   }
+   window.onload =init;
+	</script>
+	<img id="myImage" src="result_h.gif"></img>
+
+</body>
+</html>
