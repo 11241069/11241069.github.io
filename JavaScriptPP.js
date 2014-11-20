@@ -23,7 +23,7 @@ var padh=60;
 
 //direction of the pad
 var padDir=0;
-
+var contador=0;
 //bal position
 var xBallPosicion=200;
 var yBallPosicion=300;
@@ -65,6 +65,14 @@ function draw(){
     }
     if(yBallPosicion>=ypospad&&yBallPosicion<=ypospad+padh&&xBallPosicion>=xpospad && xBallPosicion<=xpospad+padw){
         xDirBall=-1;
+        contador+=1;
+    }
+    if(xBallPosicion>=xpospad+20){
+        window.alert("You have lose\nYour score is:"+contador);
+        contador=0;
+        xBallPosicion=200;
+        yBallPosicion=300;
+        
     }
     //drae the pad
     Context.fillStyle="Blue";
