@@ -1,27 +1,58 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html moznomarginboxes mozdisallowselectionprint>
 <head>
-	<title>Ping Pong Game</title>
-	<link href="style.css" type="text/css" rel="stylesheet" />
-	
+	<style type="text/css">
+		@media print{
+			.pageBreak{
+				page-break-after: always;
+			}
+		}
+		@page{
+			size: 4cm 4cm;
+			margin: 0px;
+		}
+
+	</style>
+
+	<div style="width:4cm;height:4cm;font-size:.8em">
+		525 Safra: 2015 TZ(PROVA)
+		<br>
+		<br>
+		Especie G.Max
+		<br>
+		Bateria 1 Bateria
+		<br>
+		Cultivar TMG123RR
+		<br>
+		Ident. AM. 0123455002
+		<br>
+		PN 55
+		<br>
+		Centro BOM JESUS
+		<br>
+	13/07/2015
+	</div>
+	<div class="pageBreak"></div>
+	<div style="width:4cm;height:4cm;font-size:.8em">
+		525 Safra: 2015 TZ(PROVA)
+		<br>
+		<br>
+		Especie Teste
+		<br>
+		Bateria 1 ASD
+		<br>
+		Cultivar TMG123RR
+		<br>
+		Ident. AM. 0123455002
+		<br>
+		PN 55
+		<br>
+		Centro BOM JESUS
+		<br>
+	13/07/2015
+	</div>
 </head>
 <body>
-	<canvas id="canvas" width=600 height=400></canvas>
-	
-	<script src="JavaScriptPP.js">
-		draw();
-		/*var c=document.getElementById("canvas");
-		var ctx=c.getContext("2d");
-		var w=c.width;
-		var h=c.height;
-		function draw(){
-		ctx.clearRect(0,0,w,h);
-		ctx.fillStyle="green";
-		ctx.fillRect(0,0,w,h); 	
-		}
-		draw();*/
-		
-	</script>
-	
+
 </body>
 </html>
